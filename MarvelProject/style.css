@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #111;
+    padding: 15px 20px;
+}
+
+header .logo {
+    color: #e63946;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #e63946;
+}
+
+
+.hero {
+    background: url('https://wallpapercave.com/wp/wp5394632.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #e63946;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #ff4f58;
+}
+
+
+.movies {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.movies h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    margin: 10px;
+}
+
+.movie-item img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-item img:hover {
+    transform: scale(1.1);
+}
+
+.movie-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.news {
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.news h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-article {
+    margin-bottom: 20px;
+}
+
+.news-article h3 {
+    font-size: 25px;
+}
+
+.news-article p {
+    font-size: 18px;
+}
+
+
+.about {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+
+.contact {
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: #e63946;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #ff4f58;
+}
+
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        float: none;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
